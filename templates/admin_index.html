@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railway Reservation System - User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('TRAIN.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            text-shadow: -1px -1px 0 #000,  
+                         1px -1px 0 #000,
+                         -1px 1px 0 #000,
+                         1px 1px 0 #000;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Make the menu horizontal */
+        }
+
+        li {
+            margin-right: 10px; /* Adjust spacing between menu items */
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 1px solid #4CAF50;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        /* Add this style to make the background of buttons white */
+        a {
+            background-color: white;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://pbs.twimg.com/media/FFeBmWOXMAEdjq8?format=jpg&amp;name=900x900" class="css-9pa8cd')">
+    <h1>Welcome User</h1>
+    <ul>
+        <li><a href="/reservation">Reserve Ticket</a></li>
+        <li><a href="/cancellation">Cancel Ticket</a></li>
+        <li><a href="/pnr_status">Check PNR Status</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</body>
+</html>

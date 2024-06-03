@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Train</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: -1px -1px 0 #000,  
+                         1px -1px 0 #000,
+                         -1px 1px 0 #000,
+                         1px 1px 0 #000;
+            
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .goback {
+            margin-top: 20px;
+        }
+
+        .goback a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .goback a:hover {
+            color: #333;
+        }
+        body {
+            background-image: url('TRAIN.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://pbs.twimg.com/media/FFeBmWOXMAEdjq8?format=jpg&amp;name=900x900" class="css-9pa8cd')">
+    <h1>Add Train</h1>
+    <form method="post">
+        <label for="trainname">Train Name:</label>
+        <input type="text" name="trainname" required><br>
+        <label for="trainno">Train Number:</label>
+        <input type="number" name="trainno" required><br>
+        <label for="no_ofac1stclass">AC 1st Class Seats:</label>
+        <input type="number" name="no_ofac1stclass" required><br>
+        <label for="no_ofac2ndclass">AC 2nd Class Seats:</label>
+        <input type="number" name="no_ofac2ndclass" required><br>
+        <label for="no_ofac3rdclass">AC 3rd Class Seats:</label>
+        <input type="number" name="no_ofac3rdclass" required><br>
+        <label for="no_ofsleeper">Sleeper Class Seats:</label>
+        <input type="number" name="no_ofsleeper" required><br>
+        <label for="startingpt">Starting Point:</label>
+        <input type="text" name="startingpt" required><br>
+        <label for="destination">Destination:</label>
+        <input type="text" name="destination" required><br>
+        <button type="submit">Add Train</button>
+    </form>
+    <div class="goback">
+        <a href="/">GO BACK</a>
+    </div>
+</body>
+</html>

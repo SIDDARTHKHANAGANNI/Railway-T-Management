@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: -1px -1px 0 #000,  
+                         1px -1px 0 #000,
+                         -1px 1px 0 #000,
+                         1px 1px 0 #000;
+            
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #FFFFFF;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 1px solid #4CAF50;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        body {
+            background-image: url('TRAIN.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://pbs.twimg.com/media/FFeBmWOXMAEdjq8?format=jpg&amp;name=900x900" class="css-9pa8cd')">
+    <h1>Reservation Status</h1>
+    <p>Reservation Number: {{ resno }}</p>
+    <p>Status: {{ status }}</p>
+    <p>Total Amount: {{ total_amount }}</p>
+    <a href="/">Back to Home</a>
+</body>
+</html>

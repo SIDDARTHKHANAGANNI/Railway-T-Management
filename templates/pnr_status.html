@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PNR Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: -1px -1px 0 #000,  
+                         1px -1px 0 #000,
+                         -1px 1px 0 #000,
+                         1px 1px 0 #000;
+            
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://pbs.twimg.com/media/FFeBmWOXMAEdjq8?format=jpg&amp;name=900x900" class="css-9pa8cd')">
+    <h1>PNR Status</h1>
+    <p>Reservation Number: {{ ticket['resno'] }}</p>
+    <p>Name: {{ ticket['name'] }}</p>
+    <p>Age: {{ ticket['age'] }}</p>
+    <p>Train Number: {{ ticket['trainno'] }}</p>
+    <p>Number of Tickets: {{ ticket['no_oftickets'] }}</p>
+    <p>Status: {{ ticket['status'] }}</p>
+    <a href="/">Back to Home</a>
+</body>
+</html>
